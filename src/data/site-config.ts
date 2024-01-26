@@ -27,6 +27,7 @@ export type SiteConfig = {
     title: string;
     subtitle?: string;
     description: string;
+    teaching: string;
     image?: Image;
     headerNavLinks?: Link[];
     footerNavLinks?: Link[];
@@ -38,8 +39,8 @@ export type SiteConfig = {
 };
 
 const siteConfig: SiteConfig = {
-    title: 'Dante',
-    subtitle: 'Minimal Astro.js theme',
+    title: 'Jake Renzella',
+    subtitle: 'Lecturer, Co-Head Computing and Education Research Group at University of New South Wales',
     description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
     image: {
         src: '/dante-preview.jpg',
@@ -54,54 +55,33 @@ const siteConfig: SiteConfig = {
             text: 'Projects',
             href: '/projects'
         },
-        {
-            text: 'Blog',
-            href: '/blog'
-        },
-        {
-            text: 'Tags',
-            href: '/tags'
-        }
-    ],
-    footerNavLinks: [
-        {
-            text: 'About',
-            href: '/about'
-        },
+        // {
+        //     text: 'Blog',
+        //     href: '/blog'
+        // },
         {
             text: 'Contact',
             href: '/contact'
-        },
-        {
-            text: 'Terms',
-            href: '/terms'
-        },
-        {
-            text: 'Download theme',
-            href: 'https://github.com/JustGoodUI/dante-astro-theme'
         }
     ],
+    footerNavLinks: [],
     socialLinks: [
         {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/'
-        },
-        {
-            text: 'Instagram',
-            href: 'https://instagram.com/'
+            text: 'Linkedin',
+            href: 'https://www.linkedin.com/in/jakerenzella/'
         },
         {
             text: 'X/Twitter',
-            href: 'https://twitter.com/'
+            href: 'https://twitter.com/jakerenzella'
         }
     ],
     hero: {
-        title: 'Hi There & Welcome to My Corner of the Web!',
-        text: "I'm **Ethan Donovan**, a web developer at Amazing Studio, dedicated to the realms of collaboration and artificial intelligence. My approach involves embracing intuition, conducting just enough research, and leveraging aesthetics as a catalyst for exceptional products. I have a profound appreciation for top-notch software, visual design, and the principles of product-led growth. Feel free to explore some of my coding endeavors on <a href='https://github.com/JustGoodUI/dante-astro-theme'>GitHub</a> or follow me on <a href='https://twitter.com/justgoodui'>Twitter/X</a>.",
-        image: {
-            src: '/hero.jpeg',
-            alt: 'A person sitting at a desk in front of a computer'
-        },
+        text: 'My current research focus is on designing and evaluating pedagogically-sound Large Langauge Models for use in Education contexts in partnership with Google. My previous (and still ongoing) works are mostly around Artificial Intelligence in Education, including IFA (Intelligent Feedback Assistant), Formatif: Teaching and Learning, used at several Australian and New Zealand universities with over 230,000 students.  I am an: Associate Fellow of the Higher Education Academy, and I am an Early Career Academic member of the Australasian Association for Engineering Education.',
+
+        // image: {
+        //     src: '/hero.jpeg',
+        //     alt: 'A person sitting at a desk in front of a computer'
+        // },
         actions: [
             {
                 text: 'Get in Touch',
@@ -109,6 +89,8 @@ const siteConfig: SiteConfig = {
             }
         ]
     },
+
+    teaching: '',
     subscribe: {
         title: 'Subscribe to Dante Newsletter',
         text: 'One update per week. All the latest posts directly in your inbox.',

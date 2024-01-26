@@ -8,18 +8,18 @@ import Subscribe from '../../components/Subscribe.astro';
 import siteConfig from '../../data/site-config';
 import { sortItemsByDateDesc } from '../../utils/data-utils';
 
-export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-    const posts = (await getCollection('blog')).sort(sortItemsByDateDesc);
-    return paginate(posts, { pageSize: siteConfig.postsPerPage || 4 });
-}
+// export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+//     const posts = (await getCollection('blog')).sort(sortItemsByDateDesc);
+//     return paginate(posts, { pageSize: siteConfig.postsPerPage || 4 });
+// }
 
-type Props = { page: Page<CollectionEntry<'blog'>> };
+// type Props = { page: Page<CollectionEntry<'blog'>> };
 
-const { page } = Astro.props;
-const blog = page.data;
+// const { page } = Astro.props;
+// const blog = page.data;
 ---
 
-<BaseLayout
+<!-- <BaseLayout
     title="Blog"
     description="Embark on a journey of personal insights and experiences through my blog"
     image={{ src: '/dante-preview.jpg', alt: 'The preview of the site' }}
@@ -29,4 +29,4 @@ const blog = page.data;
     {blog.map((post) => <PostPreview post={post} class="mb-10 sm:mb-12" />)}
     <Pagination page={page} class="my-16 sm:my-24" />
     <Subscribe class="my-16 sm:my-24" />
-</BaseLayout>
+</BaseLayout> -->

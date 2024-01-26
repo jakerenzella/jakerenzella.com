@@ -8,8 +8,8 @@ import ProjectPreview from '../components/ProjectPreview.astro';
 import siteConfig from '../data/site-config';
 import { sortItemsByDateDesc } from '../utils/data-utils';
 
-const posts = (await getCollection('blog')).sort(sortItemsByDateDesc);
-const featuredPosts = posts.filter(({ data }) => data.isFeatured);
+// const roles = (await getCollection('blog')).sort(sortItemsByDateDesc);
+// const featuredRoles = posts.filter(({ data }) => data.isFeatured);
 
 const projects = (await getCollection('projects')).sort(sortItemsByDateDesc);
 const featuredProjects = projects.filter(({ data }) => data.isFeatured);
@@ -17,6 +17,19 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
 
 <BaseLayout description={siteConfig.description} image={siteConfig.image}>
     <Hero />
+
+    <section class="w-full flex flex-col gap-8 mb-16 sm:mb-24">
+        <h2 class="text-xl font-serif italic sm:text-2xl">Teaching</h2>
+        <div class="max-w-none prose prose-dante sm:prose-lg">
+            I teach fundamentals computing courses such as Fundamentals of Programming, and Fundamentals of Software Engineering, achieving some of the highest
+            student-satisfactions scores at UNSW. Read my entire Student Experience Teacher Report (yes, my *entire* report, including the good, the bad, and
+            the ugly)
+        </div>
+        <div class="flex flex-wrap gap-4">
+            <Button href="https://github.com/jakerenzella/teacher-evaluation-reports/raw/master/unsw_22T2_TR.pdf">Download teaching report</Button>
+        </div>
+    </section>
+
     {
         featuredProjects?.length > 0 && (
             <div class="mb-16 sm:mb-24">
@@ -30,7 +43,30 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
             </div>
         )
     }
-    {
+
+    <section class="w-full flex flex-col gap-8 mb-12 sm:mb-12">
+        <h2 class="text-xl font-serif italic sm:text-2xl">Quick Links</h2>
+    </section>
+    <div class="mt-12 sm:mt-16">
+        <Button href="https://dl.acm.org/doi/abs/10.1145/3545945.3569768">Recent Publication</Button>
+    </div>
+    <div class="mt-4 sm:mt-6">
+        <Button href="https://splashkit.io">SplashKit</Button>
+    </div>
+    <div class="mt-4 sm:mt-6">
+        <Button href="https://formatif.app">Formatif</Button>
+    </div>
+    <div class="mt-4 sm:mt-6">
+        <Button href="https://research.unsw.edu.au/people/dr-jake-renzella">UNSW Researcher Profile</Button>
+    </div>
+    <div class="mt-4 sm:mt-6">
+        <Button href="https://scholar.google.com.au/citations?hl=en&user=l_sP9GcAAAAJ">Google Scholar</Button>
+    </div>
+    <div class="mt-4 sm:mt-6">
+        <Button href="https://github.com/jakerenzella">Github</Button>
+    </div>
+</BaseLayout>
+<!-- {
         featuredPosts?.length > 0 && (
             <div class="mb-16 sm:mb-24">
                 <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">Writing</h2>
@@ -42,5 +78,4 @@ const featuredProjects = projects.filter(({ data }) => data.isFeatured);
                 </div>
             </div>
         )
-    }
-</BaseLayout>
+    } -->
