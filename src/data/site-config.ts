@@ -76,7 +76,7 @@ const siteConfig: SiteConfig = {
         }
     ],
     hero: {
-        text: 'My current research focus is on designing and evaluating pedagogically-sound Large Langauge Models for use in Education contexts in partnership with Google. My previous (and still ongoing) works are mostly around Artificial Intelligence in Education, including IFA (Intelligent Feedback Assistant), Formatif: Teaching and Learning, used at several Australian and New Zealand universities with over 230,000 students.  I am an: Associate Fellow of the Higher Education Academy, and I am an Early Career Academic member of the Australasian Association for Engineering Education.',
+        text: 'My current research focus is on designing and evaluating pedagogically-sound Large Langauge Models for use in Education contexts with support from Google. See [my other projects](/projects). Co-Founder of Formatif: A learning and feedback platform used at several Australian universities with over 230,000 students. I am an: Associate Fellow of the Higher Education Academy, and an Early Career Academic member of the Australasian Association for Engineering Education.',
 
         // image: {
         //     src: '/hero.jpeg',
