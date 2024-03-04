@@ -41,10 +41,10 @@ export type SiteConfig = {
 const siteConfig: SiteConfig = {
     title: 'Jake Renzella',
     subtitle: 'Lecturer, Co-Head Computing and Education Research Group at University of New South Wales',
-    description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
+    description: 'Dr Jake Renzella',
     image: {
         src: '/dante-preview.jpg',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
+        alt: 'Dr Jake Renzella'
     },
     headerNavLinks: [
         {
