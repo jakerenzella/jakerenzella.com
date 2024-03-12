@@ -25,7 +25,7 @@ export type Subscribe = {
 export type SiteConfig = {
     logo?: Image;
     title: string;
-    subtitle?: string;
+    subtitle?: string[];
     description: string;
     teaching: string;
     image?: Image;
@@ -40,7 +40,7 @@ export type SiteConfig = {
 
 const siteConfig: SiteConfig = {
     title: 'Jake Renzella',
-    subtitle: 'Lecturer, Co-Head Computing and Education Research Group at University of New South Wales',
+    subtitle: ['Lecturer', 'Director of Computer Science (Undergraduate)', 'Co-Head Computing and Education Research Group at University of New South Wales'],
     description: 'Dr Jake Renzella',
     image: {
         src: '/dante-preview.jpg',
