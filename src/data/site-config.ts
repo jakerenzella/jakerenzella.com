@@ -47,7 +47,7 @@ const siteConfig: SiteConfig = {
     ],
     description: 'Dr Jake Renzella',
     image: {
-        src: '/preview.jpg',
+        src: '/preview.png',
         alt: 'Dr Jake Renzella'
     },
     headerNavLinks: [
