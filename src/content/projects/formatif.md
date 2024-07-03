@@ -9,9 +9,9 @@ seo:
     alt: Project preview
 ---
 
-![Project preview](/formatif.png)
+<!-- ![Project preview](/formatif.png) -->
 
 **Project Overview:**
 Formatif is not just another teaching and learning tool. It places student feedback at the core, and is built entirely around the persuit of high-quality feedback.
 
-## View project, including publications at [formatif.app](https://formatif.app/)
+## View project, including publications at [formatif.app](https://www.formatif.app/)

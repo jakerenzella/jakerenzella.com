@@ -5,8 +5,14 @@ seo:
   description: Jake Renzella's talks and seminars
 ---
 
-_NYU Tandon:_
+**Google, Mountain View:**
+Equitable Generative AI in higher education
+
+**Arizona State University**
+Equitable Generative AI in higher education
+
+**NYU Tandon:**
 Foundations First: Improving C's Viability in Introductory Programming Courses with the Debugging C Compiler
 
-_Deakin University:_
+**Deakin University:**
 Foundations First: Improving C's Viability in Introductory Programming Courses with the Debugging C Compiler

@@ -40,10 +40,14 @@ export type SiteConfig = {
 
 const siteConfig: SiteConfig = {
     title: 'Jake Renzella',
-    subtitle: ['Lecturer', 'Director of Computer Science (Undergraduate)', 'Co-Head Computing and Education Research Group at University of New South Wales'],
+    subtitle: [
+        'Senior Lecturer',
+        'Computer Science and Engineering, UNSW Sydney',
+        'Director of Computer Science (Undergraduate) and Co-Head Computing and Education Research Group'
+    ],
     description: 'Dr Jake Renzella',
     image: {
-        src: '/dante-preview.jpg',
+        src: '/preview.jpg',
         alt: 'Dr Jake Renzella'
     },
     headerNavLinks: [
@@ -58,6 +62,10 @@ const siteConfig: SiteConfig = {
         {
             text: 'Talks',
             href: '/talks'
+        },
+        {
+            text: 'Writing',
+            href: '/writing'
         },
         {
             text: 'Contact',
@@ -76,7 +84,7 @@ const siteConfig: SiteConfig = {
         }
     ],
     hero: {
-        text: 'My current research focus is on designing and evaluating pedagogically-sound Large Langauge Models for use in Education contexts with support from Google. See [my other projects](/projects). Co-Founder of Formatif: A learning and feedback platform used at several Australian universities with over 230,000 students. I am an: Associate Fellow of the Higher Education Academy, and an Early Career Academic member of the Australasian Association for Engineering Education.',
+        text: 'My current research focus is on designing and evaluating pedagogically-sound Large Language Models for use in Education contexts with support from Google. See [my other projects](/projects). Co-Founder of Formatif: A learning and feedback platform used at several Australian universities with over 230,000 students. I am an: Associate Fellow of the Higher Education Academy, and an Early Career Academic member of the Australasian Association for Engineering Education.',
 
         // image: {
         //     src: '/hero.jpeg',

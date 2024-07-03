@@ -1,0 +1,45 @@
+---
+import { type CollectionEntry, getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import WritingPreview from '../../components/WritingPreview.astro';
+import { sortItemsByDateDesc } from '../../utils/data-utils';
+
+export async function getStaticPaths() {
+    const writing = (await getCollection('writing')).sort(sortItemsByDateDesc);
+    const writingCount = writing.length;
+    return writing.map((writing, index) => ({
+        params: { slug: writing.slug },
+        props: {
+            writing,
+            prevWriting: index + 1 !== writingCount ? writing[index + 1] : null,
+            nextWriting: index !== 0 ? writing[index - 1] : null
+        }
+    }));
+}
+
+type Props = { project: CollectionEntry<'writing'>; prevWriting: CollectionEntry<'writing'>; nextWriting: CollectionEntry<'writing'> };
+
+const { writing, prevWriting, nextWriting } = Astro.props;
+const { title, description, seo } = writing.data;
+const { Content } = await writing.render();
+---
+
+<BaseLayout title={seo?.title ?? title} description={seo?.description ?? description} image={seo?.image} pageType="article" showHeader={false}>
+    <article class="mb-16 sm:mb-24">
+        <header class="mb-8">
+            <h1 class="text-3xl leading-tight font-serif font-medium sm:text-5xl sm:leading-tight">{title}</h1>
+        </header>
+        <div class="max-w-none prose prose-dante sm:prose-lg">
+            <Content />
+        </div>
+    </article>
+    {
+        (prevWriting || nextWriting) && (
+            <div class="my-16 sm:my-24">
+                <h2 class="mb-12 text-xl font-serif italic sm:mb-16 sm:text-2xl">View Next</h2>
+                {nextWriting && <WritingPreview writing={nextWriting} class="mb-10 sm:mb-12" headingLevel="h3" />}
+                {prevWriting && <WritingPreview writing={prevWriting} class="mb-10 sm:mb-12" headingLevel="h3" />}
+            </div>
+        )
+    }
+</BaseLayout>

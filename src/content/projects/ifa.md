@@ -8,7 +8,7 @@ seo:
     alt: Project preview
 ---
 
-![Project preview](/ifa.png)
+<!-- ![Project preview](/ifa.png) -->
 
 **Project Overview:**
 More details coming soon...
