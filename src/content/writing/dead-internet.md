@@ -11,7 +11,7 @@ seo:
 
 ![Shrimp Jesus](./shrimp-jesus.jpg)
 
-### Published in [The Conversation](https://https://theconversation.com/the-dead-internet-theory-makes-eerie-claims-about-an-ai-run-web-the-truth-is-more-sinister-229609)
+### Published in [The Conversation](https://theconversation.com/the-dead-internet-theory-makes-eerie-claims-about-an-ai-run-web-the-truth-is-more-sinister-229609)
 
 If you search “shrimp Jesus” on Facebook, you might encounter dozens of images of artificial intelligence (AI) generated crustaceans meshed in various forms with a stereotypical image of Jesus Christ.
 
