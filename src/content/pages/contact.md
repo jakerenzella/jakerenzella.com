@@ -15,4 +15,4 @@ _Email:_
 For other enquiries, feel free to drop me an email at [j@kerenzella.com](mailto:j@kerenzella.com), and I'll do my best to respond as soon as possible.
 
 _Social media:_
-Connect with me on social media as well. Find me on [Twitter](https://twitter.com/jakerenzella) or [LinkedIn](https://www.linkedin.com/in/jakerenzella/).
+Connect with me on social media as well. Find me on [Bluesky](https://bsky.app/profile/drjake.bsky.social) and [LinkedIn](https://www.linkedin.com/in/jakerenzella/).

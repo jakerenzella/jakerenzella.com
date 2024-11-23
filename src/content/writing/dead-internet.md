@@ -2,7 +2,7 @@
 title: 'The Dead Internet Theory'
 description: The ‘dead internet theory’ makes eerie claims about an AI-run web. The truth is more sinister
 publishDate: 'May 20 2024'
-isFeatured: true
+isFeatured: false
 seo:
   image:
     src: '/shrimp-jesus.png'

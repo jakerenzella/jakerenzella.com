@@ -24,7 +24,7 @@ const portfolio = page.data;
     image={{ src: '/preview.png', alt: 'Dr Jake Renzella' }}
     showHeader={false}
 >
-    <h1 class="mb-12 text-2xl leading-tight font-serif italic sm:mb-16 sm:text-4xl">Writing</h1>
+    <h1 class="mb-12 text-2xl leading-tight font-serif italic sm:mb-16 sm:text-4xl">Writing and Media</h1>
     {portfolio.map((writing) => <WritingPreview writing={writing} class="mb-10 sm:mb-12" />)}
     <Pagination page={page} class="my-16 sm:my-24" />
 </BaseLayout>

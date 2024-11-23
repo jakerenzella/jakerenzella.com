@@ -43,11 +43,11 @@ const siteConfig: SiteConfig = {
     subtitle: [
         'Senior Lecturer',
         'Computer Science and Engineering, UNSW Sydney',
-        'Director of Computer Science (Undergraduate) and Co-Head Computing and Education Research Group'
+        'Director of Studies (Computer Science), Co-Head Computing and Education Research Group'
     ],
     description: 'Dr Jake Renzella',
     image: {
-        src: '/preview.png',
+        src: '/favicon.png',
         alt: 'Dr Jake Renzella'
     },
     headerNavLinks: [
@@ -64,7 +64,7 @@ const siteConfig: SiteConfig = {
             href: '/talks'
         },
         {
-            text: 'Writing',
+            text: 'Writing and Media',
             href: '/writing'
         },
         {
@@ -79,6 +79,10 @@ const siteConfig: SiteConfig = {
             href: 'https://www.linkedin.com/in/jakerenzella/'
         },
         {
+            text: 'Bluesky',
+            href: 'https://bsky.app/profile/drjake.bsky.social'
+        },
+        {
             text: 'X/Twitter',
             href: 'https://twitter.com/jakerenzella'
         }
@@ -86,10 +90,10 @@ const siteConfig: SiteConfig = {
     hero: {
         text: 'My current research focus is on designing and evaluating pedagogically-sound Large Language Models for use in Education contexts with support from Google. See [my other projects](/projects). Co-Founder of Formatif: A learning and feedback platform used at several Australian universities with over 230,000 students. I am an: Associate Fellow of the Higher Education Academy, and an Early Career Academic member of the Australasian Association for Engineering Education.',
 
-        // image: {
-        //     src: '/hero.jpeg',
-        //     alt: 'A person sitting at a desk in front of a computer'
-        // },
+        image: {
+            src: '/favicon.png',
+            alt: 'A photo of Dr Jake Renzella'
+        },
         actions: [
             {
                 text: 'Get in touch',
