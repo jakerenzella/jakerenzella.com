@@ -88,7 +88,7 @@ const siteConfig: SiteConfig = {
         }
     ],
     hero: {
-        text: 'My current research focus is on designing and evaluating pedagogically-sound Large Language Models for use in Education contexts with support from Google. See [my other projects](/projects). Co-Founder of Formatif: A learning and feedback platform used at several Australian universities with over 230,000 students. I am an: Associate Fellow of the Higher Education Academy, and an Early Career Academic member of the Australasian Association for Engineering Education.',
+        text: 'I am a Senior Lecturer in the School of Computer Science and Engineering at UNSW where I co-lead the Computing and Education research group. I am an [award winning educator](https://www.afr.com/work-and-careers/education/winning-strategy-setting-guardrails-for-generative-ai-20240808-p5k0tr), and my main area of study is applied AI in education, including designing and evaluating pedagogically-sound Large Language Models with support from Google. See [my other projects](/projects). Previously, I have co-founded EdTech startups, and was a Research Fellow at the Applied Artificial Intelligence Institute.',
 
         image: {
             src: '/favicon.png',
