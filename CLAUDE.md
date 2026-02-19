@@ -28,7 +28,7 @@ pnpm is also available (pnpm-lock.yaml is tracked).
 
 ## Key Patterns
 
-- Always use shadcn/ui components (`components/ui/`) instead of native HTML elements (e.g. `<Button>` not `<button>`, `<Input>` not `<input>`, `<Dialog>` not a hand-rolled modal)
+- Always use shadcn/ui components (`components/ui/`) instead of native HTML elements (e.g. `<Button>` not `<button>`, `<Input>` not `<input>`, `<Dialog>` not a hand-rolled modal!)
 - `cn()` from `lib/utils.ts` (clsx + tailwind-merge) for conditional class names
 - Lucide React for icons: `<IconName className="h-5 w-5" />`
 - External links use plain `<a>` tags with `target="_blank" rel="noopener noreferrer"`
