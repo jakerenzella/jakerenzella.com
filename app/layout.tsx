@@ -17,6 +17,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://jakerenzella.com'),
   title: 'Dr Jake Renzella — Computer Science & AI Education',
   description:
     'Senior Lecturer at UNSW Sydney. Researching pedagogical generative AI, leading Day of AI Australia, and exploring the dead internet theory.',
@@ -24,16 +25,16 @@ export const metadata: Metadata = {
     icon: '/favicon.png',
   },
   openGraph: {
-    title: 'Dr Jake Renzella',
+    title: 'Dr Jake Renzella — Computer Science & AI Education at UNSW Sydney',
     description:
-      'Senior Lecturer at UNSW Sydney. Pedagogical AI, Day of AI Australia, Dead Internet Theory.',
+      'Senior Lecturer at UNSW Sydney researching pedagogical generative AI. Leading Day of AI Australia, delivering free AI literacy to 250,000+ students annually.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dr Jake Renzella',
+    title: 'Dr Jake Renzella — Computer Science & AI Education at UNSW Sydney',
     description:
-      'Senior Lecturer at UNSW Sydney. Pedagogical AI, Day of AI Australia, Dead Internet Theory.',
+      'Senior Lecturer at UNSW Sydney researching pedagogical generative AI. Leading Day of AI Australia, delivering free AI literacy to 250,000+ students annually.',
   },
 }
 
