@@ -2,7 +2,9 @@ import { ExpandableLinkCard } from "@/components/expandable-link-card";
 import { LinkCard } from "@/components/link-card";
 import { SocialLinks } from "@/components/social-links";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { Badge } from "@/components/ui/badge";
 import {
+  ArrowUpRight,
   DollarSign,
   GraduationCap,
   Mail,
@@ -26,13 +28,14 @@ export default function Home() {
         </div>
 
         <p className="mt-2 text-sm text-muted-foreground">
-          Senior Lecturer <br /> School of Computer Science & Engineering <br />{" "}
-          UNSW Sydney, Australia
+          Senior Lecturer · Director of Studies (Computer Science) <br />
+          School of Computer Science & Engineering · UNSW Sydney
         </p>
 
         <p className="mt-5 max-w-md text-sm leading-relaxed text-foreground/80">
-          I build pedagogical generative AI and research whether it actually
-          works. I lead UNSW{"'"}s partnership with{" "}
+          I lead the Computing and Education Research Group, build pedagogical
+          generative AI, and research whether it actually works. I lead UNSW{"'"}s
+          partnership with{" "}
           <a
             href="https://dayofaiaustralia.com"
             target="_blank"
@@ -44,6 +47,23 @@ export default function Home() {
           , delivering free AI literacy programs to 250,000+ students annually.
         </p>
 
+        <div className="mt-4 flex flex-wrap justify-center gap-1.5">
+          {[
+            "Pedagogical AI",
+            "LLM Fine-Tuning",
+            "AI Literacy (K-12)",
+            "CS Education",
+          ].map((topic) => (
+            <Badge
+              key={topic}
+              variant="secondary"
+              className="font-normal text-muted-foreground"
+            >
+              {topic}
+            </Badge>
+          ))}
+        </div>
+
         <div className="mt-5">
           <SocialLinks />
         </div>
@@ -52,8 +72,67 @@ export default function Home() {
       {/* Divider */}
       <div className="my-10 h-px w-full bg-border" role="separator" />
 
-      {/* Links */}
-      <section aria-label="Links" className="flex flex-col gap-3">
+      {/* Selected Work */}
+      <section aria-label="Selected Work" className="flex flex-col gap-3">
+        <h2 className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+          Selected Work
+        </h2>
+        {[
+          {
+            title:
+              "dcc --help: Transforming the Role of the Compiler by Generating Context-Aware Error Explanations with Large Language Models",
+            venue: "SIGCSE 2024",
+            href: "https://doi.org/10.1145/3626252.3630822",
+          },
+          {
+            title:
+              "Verifying Student Identity in Oral Assessments with Deep Speaker",
+            venue: "Computers & Education: AI, 2022",
+            href: "https://doi.org/10.1016/j.caeai.2021.100044",
+          },
+          {
+            title:
+              "Foundations First: Improving C\u2019s Viability in Introductory Programming Courses with the Debugging C Compiler",
+            venue: "SIGCSE 2023",
+            href: "https://doi.org/10.1145/3545945.3569768",
+          },
+        ].map((pub) => (
+          <a
+            key={pub.href}
+            href={pub.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-4 rounded-xl border border-border bg-transparent px-5 py-4 transition-all duration-200 hover:border-foreground/20 hover:bg-card"
+          >
+            <span className="flex min-w-0 flex-1 flex-col">
+              <span className="text-sm font-medium text-foreground">
+                {pub.title}
+              </span>
+              <span className="text-xs text-muted-foreground leading-relaxed">
+                {pub.venue}
+              </span>
+            </span>
+            <ArrowUpRight className="h-4 w-4 shrink-0 text-muted-foreground transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-foreground" />
+          </a>
+        ))}
+        <a
+          href="https://scholar.google.com.au/citations?user=l_sP9GcAAAAJ"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-1 text-xs text-muted-foreground transition-colors hover:text-foreground"
+        >
+          View all publications →
+        </a>
+      </section>
+
+      {/* Divider */}
+      <div className="my-14 h-px w-full bg-border" role="separator" />
+
+      {/* Highlights */}
+      <section aria-label="Highlights" className="flex flex-col gap-3">
+        <h2 className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+          Highlights
+        </h2>
         <ExpandableLinkCard
           title="Day of AI Australia"
           description="Free AI literacy for every Australian school. Partner with us."
